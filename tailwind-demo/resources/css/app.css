@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-style {
+    @apply block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary_color md:p-0 dark:text-white md:dark:hover:text-primary_color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent;
+}
+
+.highlight {
+    @apply relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-[#4ADE80] hover:before:bg-primary_color focus:outline-none focus:before:bg-primary_color dark:text-white dark:hover:before:bg-white dark:focus:before:bg-white;
+}
+
+.insights-options{
+   @apply m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 cursor-pointer
+}
+
+.footer-link{
+    @apply inline-block px-6 py-2 font-normal text-white transition hover:text-black
+}
