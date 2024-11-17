@@ -50,14 +50,15 @@
           <div class="row mt-4" style="display: flex; justify-content: space-between; align-items: center">
             <div class="col-md-6 mt-4">
               <a class="btn btn-primary text-uppercase bg-primary" style="border-radius: 400px; width: 100%"
-                href="https://drive.google.com/file/d/1xksDf8580m2FN3_KFZbS-Pxr-kp0u22l/view?usp=sharing" target="_blank">
+                href="https://drive.google.com/file/d/1xksDf8580m2FN3_KFZbS-Pxr-kp0u22l/view?usp=sharing"
+                target="_blank">
                 Resume &nbsp;
                 <i class="fas fa-download"></i>
               </a>
             </div>
             <div class="col-md-6 mt-4 text-md-end text-center">
               <span>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/d4shcodes" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://x.com/Dashen02" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/dashen-k-288b721b9" target="_blank">
                   <i class="fab fa-linkedin"></i>
@@ -193,16 +194,16 @@
         </div>
       </div>
       <div class="row mt-4 p-3">
-        <div class="col-md-4 mt-3">
+        <div class="col-md-3 mt-3">
           <div class="card">
             <img src="assets/voko-app.png" class="card-img-top" alt="app-1" />
             <div class="card-body">
-              <p class="card-text">App for teaching preschoolers vowels and consonants.</p>
+              <p class="card-text">An app for preschoolers to learn vowels and consonants with fun activities.</p>
               <p class="card-text text-muted">Freelance project</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mt-3">
+        <div class="col-md-3 mt-3">
           <div class="card">
             <img src="assets/soundify.png" class="card-img-top" alt="app-2" />
             <div class="card-body">
@@ -212,11 +213,20 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mt-3">
+        <div class="col-md-3 mt-3">
           <div class="card">
             <img src="assets/tenflix.png" class="card-img-top" alt="app-3" />
             <div class="card-body">
               <p class="card-text">Discover the latest movies and series, powered by an API-based collection.</p>
+              <p class="card-text text-muted">Side Project</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="assets/mobalite.png" class="card-img-top" alt="app-3" />
+            <div class="card-body">
+              <p class="card-text">A small Laravel project to test Tailwind CSS integration and styling!</p>
               <p class="card-text text-muted">Side Project</p>
             </div>
           </div>
@@ -227,9 +237,7 @@
 
   <footer class=" text-center p-3  bg-white txt-primary shadow-lg fw-bold">
 
-
-    &copy; 2024 Dashen's Portfolio
-
+    &copy; <span id="year"></span> Dashen. All Rights Reserved.
 
   </footer>
 
@@ -249,6 +257,13 @@
       });
     });
   </script>
+
+  <script>
+    
+    document.getElementById("year").innerHTML = (new Date().getFullYear());
+
+  </script>
+
 </body>
 
 </html>
