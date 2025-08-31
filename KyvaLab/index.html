@@ -64,7 +64,9 @@
 					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
-					<li class="nav-item cta"><a href="#" class="nav-link">Book Free Workshop</a></li>
+					<li class="nav-item cta "><a class="nav-link" data-toggle="modal" data-target="#form"
+							style="cursor:pointer">Book
+							Free Workshop</a></li>
 
 				</ul>
 			</div>
@@ -597,6 +599,62 @@
 		</div>
 	</section>
 
+	<!-- Form -->
+	<div class="modal fade" id="form" tabindex="-1" aria-labelledby="bookLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<form id="bookingForm" novalidate>
+					<div class="modal-header">
+						<h5 class="modal-title" id="bookLabel">Book Free Workshop</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="name">Your Name</label>
+							<input id="name" name="name" type="text" class="form-control" required>
+							<div class="invalid-feedback">Please enter your name.</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" class="form-control" required>
+							<div class="invalid-feedback">Enter a valid email.</div>
+						</div>
+
+						<div class="form-group">
+							<label for="company">Company</label>
+							<input id="company" name="company" type="text" class="form-control" required>
+							<div class="invalid-feedback">Company is required.</div>
+						</div>
+
+						<div class="form-group">
+							<label for="team">Team Size</label>
+							<input id="team" name="team" type="number" min="1" class="form-control" required>
+							<div class="invalid-feedback">Enter team size.</div>
+						</div>
+
+						<div class="form-group">
+							<label for="date">Preferred Date</label>
+							<input id="date" name="date" type="date" class="form-control" required>
+							<div class="invalid-feedback">Pick a date.</div>
+						</div>
+
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
 	<footer class="ftco-footer ftco-footer-2 ftco-section">
 		<div class="container">
 			<div class="row mb-5">
@@ -667,7 +725,8 @@
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
-		</svg></div>
+		</svg>
+	</div>
 
 
 	<script src="js/jquery.min.js"></script>
@@ -685,6 +744,25 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		// Bootstrap 4-style validation + redirect
+		(function () {
+			'use strict';
+			var form = document.getElementById('bookingForm');
+			form.addEventListener('submit', function (e) {
+				if (!form.checkValidity()) {
+					e.preventDefault();
+					e.stopPropagation();
+					form.classList.add('was-validated');
+					return;
+				}
+				e.preventDefault(); // valid -> redirect
+				var qs = window.location.search || '';
+				window.location.href = 'thank-you.html' + qs; // keeps UTMs
+			}, false);
+		})();
+	</script>
 
 </body>
 
