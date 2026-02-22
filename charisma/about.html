@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LifePoint Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="config.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-church-bg text-church-primary font-sans antialiased selection:bg-church-accent selection:text-church-primary">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase">
+                        LifePoint<span class="text-church-accent">.</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="about.html"
+                        class="text-sm font-bold uppercase tracking-widest text-church-accent transition-colors">About</a>
+                    <a href="ministries.html"
+                        class="text-sm font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Ministries</a>
+                    <a href="sermons.html"
+                        class="text-sm font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Sermons</a>
+                    <a href="events.html"
+                        class="text-sm font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Events</a>
+                    <a href="give.html"
+                        class="px-6 py-2 bg-church-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-church-accent hover:text-church-primary transition-all duration-300">Give</a>
+                    <a href="plan-visit.html"
+                        class="px-6 py-2 border-2 border-church-primary text-church-primary text-sm font-bold uppercase tracking-widest hover:bg-church-primary hover:text-white transition-all duration-300">Plan
+                        Visit</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn"
+                        class="text-church-primary hover:text-church-accent focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-xl">
+            <div class="px-4 pt-4 pb-8 space-y-4 flex flex-col items-center">
+                <a href="about.html"
+                    class="text-xl font-bold uppercase tracking-widest text-church-accent transition-colors">About</a>
+                <a href="ministries.html"
+                    class="text-xl font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Ministries</a>
+                <a href="sermons.html"
+                    class="text-xl font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Sermons</a>
+                <a href="events.html"
+                    class="text-xl font-bold uppercase tracking-widest hover:text-church-accent transition-colors">Events</a>
+                <a href="give.html"
+                    class="w-full text-center px-6 py-3 bg-church-primary text-white text-lg font-bold uppercase tracking-widest hover:bg-church-accent hover:text-church-primary transition-all duration-300">Give</a>
+                <a href="plan-visit.html"
+                    class="w-full text-center px-6 py-3 border-2 border-church-primary text-church-primary text-lg font-bold uppercase tracking-widest hover:bg-church-primary hover:text-white transition-all duration-300">Plan
+                    Visit</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative py-32 bg-church-primary flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                alt="About Background" class="w-full h-full object-cover grayscale">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tighter uppercase mb-4">
+                Who We <span class="text-church-accent">Are</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto font-light">
+                Our story, our beliefs, and our leadership.
+            </p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg prose-slate mx-auto">
+                <h2 class="text-3xl font-bold text-church-primary uppercase tracking-tight">Our Story</h2> <br>
+                <p>
+                    LifePoint Church began with a simple vision: to create a place where people could experience the
+                    life-changing presence of God. Over the years, we have grown into a vibrant community of believers
+                    passionate about serving our city and the world.
+                </p>
+
+                <h2 class="text-3xl font-bold text-church-primary uppercase tracking-tight mt-12">Our Beliefs</h2> <br>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>The Bible:</strong> We believe the Bible is the inspired Word of God.</li>
+                    <li><strong>God:</strong> We believe in one God eternally existing in three persons: Father, Son,
+                        and Holy Spirit.</li>
+                    <li><strong>Jesus:</strong> We believe Jesus Christ is the Son of God who died for our sins and rose
+                        again.</li>
+                    <li><strong>Salvation:</strong> We believe salvation is a free gift of God received through faith in
+                        Jesus Christ.</li>
+                </ul>
+
+                <h2 class="text-3xl font-bold text-church-primary uppercase tracking-tight mt-12">Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 not-prose mt-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white shadow-lg group overflow-hidden">
+                        <div class="relative h-30 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="John Doe"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 border-l-4 border-church-accent">
+                            <h3 class="text-2xl font-bold uppercase mb-1">John Doe</h3>
+                            <p class="text-church-accent text-sm font-bold uppercase tracking-widest mb-4">Lead Pastor
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">Passionate about teaching the Word and leading the
+                                church into a deeper relationship with God.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg group overflow-hidden">
+                        <div class="relative h-30 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="John Doe"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 border-l-4 border-church-accent">
+                            <h3 class="text-2xl font-bold uppercase mb-1">John Doe</h3>
+                            <p class="text-church-accent text-sm font-bold uppercase tracking-widest mb-4">Lead Pastor
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">Passionate about teaching the Word and leading the
+                                church into a deeper relationship with God.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg group overflow-hidden">
+                        <div class="relative h-30 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="John Doe"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 border-l-4 border-church-accent">
+                            <h3 class="text-2xl font-bold uppercase mb-1">John Doe</h3>
+                            <p class="text-church-accent text-sm font-bold uppercase tracking-widest mb-4">Lead Pastor
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">Passionate about teaching the Word and leading the
+                                church into a deeper relationship with God.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-church-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-3xl font-bold tracking-tighter uppercase mb-6">LifePoint<span
+                            class="text-church-accent">.</span></h2>
+                    <p class="text-gray-400 max-w-md">
+                        A community dedicated to helping people know God, find freedom, discover purpose, and make a
+                        difference.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase tracking-widest mb-6 text-church-accent">Sundays</h4>
+                    <p class="text-gray-300 mb-2">9:00 AM & 11:00 AM</p>
+                    <p class="text-gray-300">123 Church Street<br>Cityville, ST 12345</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase tracking-widest mb-6 text-church-accent">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-church-accent transition-colors">Facebook</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-church-accent transition-colors">Instagram</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-church-accent transition-colors">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2024 LifePoint Church. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
