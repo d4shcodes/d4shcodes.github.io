@@ -1,10 +1,10 @@
-# LifePoint Church Website
+# Charisma Assembly Of God Website
 
-A modern, responsive church website built with HTML, Tailwind CSS, and vanilla JavaScript. This website provides information about LifePoint Church, its ministries, sermons, events, and facilitates online giving and visit planning.
+A modern, responsive church website built with HTML, Tailwind CSS, and vanilla JavaScript. This website provides information about Charisma Assembly Of God, its ministries, sermons, events, and facilitates online giving and visit planning.
 
 ## 🎯 Overview
 
-The LifePoint Church website is designed to help visitors:
+The Charisma Assembly Of God website is designed to help visitors:
 - **Know God** and discover their faith journey
 - **Find Freedom** through community and support
 - **Discover Purpose** in their lives
@@ -169,4 +169,4 @@ This project is open source and available for use by churches and religious orga
 
 ---
 
-**LifePoint Church** - Helping people know God, find freedom, discover purpose, and make a difference.
+**Charisma Assembly Of God** - Helping people know God, find freedom, discover purpose, and make a difference.
